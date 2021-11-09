@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="454.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banamercliente.presentacion.retirarDinero.RetirarDineroController">
+    <stylesheets>
+        <URL value="@retirardinero.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="40.0" layoutY="42.0" prefHeight="29.0" prefWidth="95.0" text="Saldo de cuenta:" />
+      <TextField layoutX="166.0" layoutY="44.0" prefHeight="25.0" prefWidth="254.0" />
+      <Button fx:id="btnRegresar" layoutX="357.0" layoutY="211.0" mnemonicParsing="false" onAction="#onActionRegresar" prefHeight="39.0" prefWidth="63.0">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/Exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="40.0" layoutY="97.0" prefHeight="29.0" prefWidth="95.0" text="Monto a retirar:" />
+      <Label layoutX="40.0" layoutY="158.0" prefHeight="29.0" prefWidth="95.0" text="Resultado" />
+      <TextField layoutX="166.0" layoutY="99.0" prefHeight="25.0" prefWidth="254.0" />
+      <TextField layoutX="166.0" layoutY="158.0" prefHeight="25.0" prefWidth="254.0" />
+      <Button fx:id="btnAceptar" layoutX="204.0" layoutY="211.0" mnemonicParsing="false" onAction="#onActionAceptar" prefHeight="33.0" prefWidth="30.0">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/Aceptar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnLimpiar" layoutX="40.0" layoutY="211.0" mnemonicParsing="false" onAction="#onActionLimpiar" prefHeight="33.0" prefWidth="30.0">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/Limpiar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

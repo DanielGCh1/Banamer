@@ -3,7 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/dgcha/Documents/NetBeansProjects/BanamerCliente/src/banamercliente/main.java</file>
+            <file>file:/C:/Users/dgcha/Documents/GitHub/Banamer/BanamerCliente/src/banamercliente/presentacion/pantallaPrincipal/PantallaPrincipalController.java</file>
+            <file>file:/C:/Users/dgcha/Documents/GitHub/Banamer/BanamerCliente/src/banamercliente/presentacion/pantallaPrincipal/PantallaPrincipalModel.java</file>
+            <file>file:/C:/Users/dgcha/Documents/GitHub/Banamer/BanamerCliente/src/banamercliente/presentacion/cambiarClave/CambiarClaveModel.java</file>
         </group>
     </open-files>
 </project-private>
