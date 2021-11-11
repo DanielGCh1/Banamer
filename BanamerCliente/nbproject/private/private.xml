@@ -5,6 +5,8 @@
         <group>
             <file>file:/C:/Users/dgcha/Documents/GitHub/Banamer/BanamerCliente/src/banamercliente/presentacion/pantallaPrincipal/PantallaPrincipalController.java</file>
             <file>file:/C:/Users/dgcha/Documents/GitHub/Banamer/BanamerCliente/src/banamercliente/presentacion/pantallaPrincipal/PantallaPrincipalModel.java</file>
+            <file>file:/C:/Users/dgcha/Documents/GitHub/Banamer/BanamerCliente/src/banamercliente/comunicacion/SerciveProxy.java</file>
+            <file>file:/C:/Users/dgcha/Documents/GitHub/Banamer/BanamerCliente/src/banamercliente/logica/Service.java</file>
             <file>file:/C:/Users/dgcha/Documents/GitHub/Banamer/BanamerCliente/src/banamercliente/presentacion/cambiarClave/CambiarClaveModel.java</file>
         </group>
     </open-files>
