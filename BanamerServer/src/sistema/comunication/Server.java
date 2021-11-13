@@ -1,23 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package banamerservidor.comunicacion;
+
+package sistema.comunication;
 
 import banamerprotocolo.comunicacion.Protocolo;
 import banamerprotocolo.logica.Usuario;
-import banamerservidor.logica.Service;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import sistema.logic.Service;
 
-/**
- *
- * @author dgcha
- */
+
 public class Server {
     ServerSocket ss;
     
@@ -54,4 +47,5 @@ public class Server {
             } catch (IOException ex) { }
         }
     }
+    
 }
