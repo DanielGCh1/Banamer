@@ -38,6 +38,21 @@ public class UsuarioDao {
             throw new Exception ("Cliente no Existe");
         }
     }
+    public Usuario getUsuario(Usuario usuario) throws Exception{
+        String sql="select * from usuario u where id=?";
+        PreparedStatement stm = db.prepareStatement(sql);
+        stm.setInt(1, usuario.getId());
+        
+        Usuario u;
+        ResultSet rs =  db.executeQuery(stm);
+        if (rs.next()) {
+            u = from(rs, "u"); 
+            return u;
+        }
+        else{
+            throw new Exception ("Cliente no Existe");
+        }
+    }
     public void retiro(Usuario u, Integer monto) throws SQLException, Exception{
         String sql="update usuario set saldo = saldo-? where id = ? and saldo >=? ";
         PreparedStatement stm = db.prepareStatement(sql);
@@ -68,7 +83,7 @@ public class UsuarioDao {
         String sql="update usuario set clave =? where id = ?";
         PreparedStatement stm = db.prepareStatement(sql);
         stm.setString(1, clave);
-        stm.setInt(1, u.getId());
+        stm.setInt(2, u.getId());
         int count = db.executeUpdate(stm);
         if(count==0){
             throw new Exception("Saldo insuficiente");
@@ -89,6 +104,8 @@ public class UsuarioDao {
             throw new Exception ("Cliente no Existe");
         }
     }
+    
+    
     public List<Usuario> findAll(){
         List<Usuario> resultado=new ArrayList<>();
         try {

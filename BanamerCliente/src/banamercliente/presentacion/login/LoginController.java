@@ -8,6 +8,7 @@ package banamercliente.presentacion.login;
 import banamercliente.main;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -21,6 +22,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import javax.swing.JOptionPane;
+import javax.swing.text.PlainView;
 
 /**
  * FXML Controller class
@@ -37,15 +39,21 @@ public class LoginController implements Initializable {
     private Button btnSalir;
     @FXML
     private Button btnEntrar;
-    
+
     // ----------------MVC-----------------------------------------
     private LoginModel model;
     // ------------------------------------------------------------
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+        Platform.runLater(
+                    new Runnable() {         // nuevo evento, para que el hilo principal modifique la interfaz grafica
+                public void run() {  // y no un hilo secundario
+                    //controller.animate();
+                }
+            }
+        );
+    }
 
     @FXML
     private void onActionSalir(ActionEvent event) {
@@ -53,11 +61,12 @@ public class LoginController implements Initializable {
 
     @FXML
     private void onActionEntrar(ActionEvent event) {
-        if(true){
+        if (true) {
             entrar();
-        }        
+        }
     }
-    public void entrar(){
+
+    public void entrar() {
         try {
             Stage ventanaPrincipal = (Stage) btnEntrar.getScene().getWindow();
 

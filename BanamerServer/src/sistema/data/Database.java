@@ -43,7 +43,6 @@ public class Database {
         try {
             Properties prop = new Properties();
             URL resourceUrl = getClass().getResource(PROPERTIES_FILE_NAME);
-            //URL resourceUrl = getClass().getResource("C:/Users/dgcha/Documents/GitHub/Banamer/BanamerServidor/database.properties");
             File file = new File(resourceUrl.toURI());
             prop.load(new BufferedInputStream(new FileInputStream(file)));
             String driver = prop.getProperty("database_driver");

@@ -24,6 +24,9 @@ public class Service {
     public Usuario login(Usuario u) throws Exception {
         return usuarioDao.login(u);
     }
+    public Usuario getUsuario(Usuario usuario) throws Exception{
+        return usuarioDao.getUsuario(usuario);
+    }
 
     public List<Usuario> findAll() {
         return usuarioDao.findAll();
