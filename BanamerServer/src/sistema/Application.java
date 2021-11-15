@@ -12,19 +12,19 @@ public class Application {
     public static void main(String[] args) throws IOException {
         /*Server server = new Server();
         server.run();*/
-        System.out.println("Hola2");
+        
         try {
             List<Usuario> resultado = Service.instance().findAll();
             for (int i = 0; i < resultado.size(); i++) {
                 System.out.println("Usuario: "+ resultado.get(i).toString());
             }
+            /*
             
-            
-            Usuario usuario = new Usuario(1, "54Ue%8pr");
+            Usuario usuario = new Usuario(1, "5Mu$kr24");
             Service.instance().retiro(usuario, 100);
-         /*   if(result==1){
+            if(result==1){
                 System.out.println("Retiro exitoso");
-            }*/
+            }
             
             
             usuario = Service.instance().login(usuario);
@@ -37,11 +37,11 @@ public class Application {
             
             System.out.println("Usuario tiene un saldo de: "+ Service.instance().consultarSaldo(usuario.getId()));
             
-            Service.instance().cambiarClave(usuario, "5Mu$kr24");
+            //Service.instance().cambiarClave(usuario, "5Mu$kr24");
             
             usuario = Service.instance().getUsuario(usuario);
             
-            System.out.println("Usuario: "+ usuario.toString());
+            System.out.println("Usuario: "+ usuario.toString());*/
         } catch (Exception e) {
             System.out.println("Error");
         }

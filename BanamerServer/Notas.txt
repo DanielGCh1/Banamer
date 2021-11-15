@@ -1,0 +1,34 @@
+26/10/2021 34:00
+El profe habla sobre lo que hace cuando cierra el programa.
+44:00
+El profe vuelve ha hablar mas del proyecto.
+
+2/11/2021 2:30
+Un cliente hace una petición por medio se sockest por medio 
+del verbo send, y por medio del OutputStream
+
+OutputStream y la operación que se hace sobre el es el
+read? creo que es send
+
+lo que uno escribe al OutputStream se va hacia el servidor
+
+la respuesta de la petición viene por el InputStream del socket
+y usa el verbo read
+
+cuando el cliente hace un read del InputStream del socket este
+es un "bloquinCode", entonces el hilo que ejecuta este read
+no va ha avanzar hasta que no llegue la respuesta.
+Esto es un cliente-servidor sincronico, porque espera la respuesta
+, el asincronico, seria el que sigue sin esperar la respuesta.
+
+*****
+como funciona mas el metodo listen por abajo?
+****
+
+27:00
+el profe habla de como estan todo organisado, lo que me interesa
+
+41:03
+hay es donde tengo que ver en el listen(), como tengo que programarlo en mi caso
+
+

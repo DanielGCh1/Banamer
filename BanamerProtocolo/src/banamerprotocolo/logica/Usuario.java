@@ -5,13 +5,14 @@
  */
 package banamerprotocolo.logica;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
  * @author dgcha
  */
-public class Usuario {
+public class Usuario implements Serializable{
     Integer id;
     String nombre;
     String clave;
@@ -19,7 +20,9 @@ public class Usuario {
 
     public Usuario(Integer id, String clave) {
         this.id = id;
+        this.nombre = "";
         this.clave = clave;
+        this.saldo = 0;
     }
 
     public Usuario(Integer id, String nombre, String clave, Integer saldo) {
