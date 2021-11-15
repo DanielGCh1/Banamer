@@ -10,17 +10,22 @@ package banamerprotocolo.comunicacion;
  * @author dgcha
  */
 public class Protocolo {
+    
     public static final String SERVER = "localhost";
     public static final int PORT = 1234;
     
-    public static final int LOGIN= 1;
-    public static final int LOGOUT= 2;
-    public static final int POST = 3;
+    public static final int login = 1;
+    public static final int cambiarClave= 2;
+    public static final int  retirarSaldo= 3;
+    public static final int  consultarSaldo= 4;
+    public static final int  salir = 5;
     
-    public static final int DELIVER=10;
+    public static final int ok= 6;
     
-    public static final int ERROR_NO_ERROR=0;
-    public static final int ERROR_LOGIN= 1;
-    public static final int ERROR_LOGOUT = 2;
-    public static final int ERROR_POST=3;
+    
+    public static final int error =0;
+    
+    public static final int claveIncorrecta= 1;
+    public static final int saldoInsuficiente = 2;
+    public static final int usuarioNoExiste = 3;
 }
