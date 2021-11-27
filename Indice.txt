@@ -1,0 +1,34 @@
+Clientes
+
+onActionConsultar(ActionEvent event) 404 
+update(Observable o, Object arg)     436
+obtenerCantonComBoxCanton(Event event) 476
+OnActionGuardar(ActionEvent event)   488
+obtenerDistritoComBoxDistrito(Event event) 520
+OnActionPrestamos(ActionEvent event) 531
+OnActionImprimirPDF(ActionEvent event) 563
+OnActionEditar(ActionEvent event)     577
+
+Prestamos
+
+update(Observable o, Object arg)      140
+OnActionRegresar(ActionEvent event)   155
+OnActionPagarMensualidad(ActionEvent event) 163
+OnActionEditar(ActionEvent event)     196
+OnActionAgregar(ActionEvent event)    248
+OnActionBuscar(ActionEvent event)     291
+OnActionListar(ActionEvent event)     310
+OnActionImprimirPDF(ActionEvent event) 331
+
+Mensualidades
+
+update(Observable o, Object arg)      94
+OnActionRegresar(ActionEvent event)   163 // actualiso la vista de prestamos
+OnActionEditar(ActionEvent event)     172
+OnActionAgregar(ActionEvent event)    229
+OnActionBuscar(ActionEvent event)     297
+OnActionListar(ActionEvent event)     315
+OnActionLimpiar(ActionEvent event)    336
+OnActionImprimirPDF(ActionEvent event) 344
+
+

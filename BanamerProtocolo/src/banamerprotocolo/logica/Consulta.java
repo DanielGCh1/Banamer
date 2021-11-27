@@ -14,10 +14,29 @@ import java.io.Serializable;
 public class Consulta implements Serializable{
     private int accion;
     private Usuario usuario;
+    private int saldo;
+    private String clave;
+    private String claveNueva;
+
+    public Consulta(int accion, String clave, String claveNueva) {
+        this.accion = accion;
+        this.clave = clave;
+        this.claveNueva = claveNueva;
+    }
 
     public Consulta(int accion, Usuario usuario) {
         this.accion = accion;
         this.usuario = usuario;
+    }
+
+    public Consulta(int accion, int saldo) {
+        this.accion = accion;
+        this.saldo = saldo;
+    }
+
+    public Consulta(int accion, String clave) {
+        this.accion = accion;
+        this.clave = clave;
     }
 
     public Consulta(int accion) {
@@ -39,4 +58,29 @@ public class Consulta implements Serializable{
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
+    public String getClaveNueva() {
+        return claveNueva;
+    }
+
+    public void setClaveNueva(String claveNueva) {
+        this.claveNueva = claveNueva;
+    }
+    
 }

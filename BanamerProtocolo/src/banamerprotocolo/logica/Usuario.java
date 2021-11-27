@@ -12,7 +12,8 @@ import java.util.Objects;
  *
  * @author dgcha
  */
-public class Usuario implements Serializable{
+public class Usuario implements Serializable {
+
     Integer id;
     String nombre;
     String clave;
@@ -33,8 +34,10 @@ public class Usuario implements Serializable{
     }
 
     public Usuario() {
-        this.id=0;
-        this.clave="";
+        this.id = 0;
+        this.clave = "";
+        this.nombre = "";
+        this.saldo = 0;
     }
 
     public Integer getId() {
@@ -92,11 +95,11 @@ public class Usuario implements Serializable{
             return false;
         }
         return true;
-    }     
+    }
 
     @Override
     public String toString() {
         return "Usuario{" + "id=" + id + ", nombre=" + nombre + ", clave=" + clave + ", saldo=" + saldo + '}';
     }
-    
+
 }

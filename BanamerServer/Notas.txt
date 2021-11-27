@@ -4,7 +4,7 @@ El profe habla sobre lo que hace cuando cierra el programa.
 El profe vuelve ha hablar mas del proyecto.
 
 2/11/2021 2:30
-Un cliente hace una petición por medio se sockest por medio 
+Un cliente hace una petición por medio de sockest por medio 
 del verbo send, y por medio del OutputStream
 
 OutputStream y la operación que se hace sobre el es el

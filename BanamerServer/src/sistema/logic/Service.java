@@ -1,5 +1,6 @@
 package sistema.logic;
 
+import banamerprotocolo.logica.Respuesta;
 import banamerprotocolo.logica.Usuario;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ public class Service {
     UsuarioDao usuarioDao;
 
     // Service methods
-    public Usuario login(Usuario u) throws Exception {
+    public Respuesta login(Usuario u) throws Exception {
         return usuarioDao.login(u);
     }
     public Usuario getUsuario(Usuario usuario) throws Exception{
@@ -32,8 +33,8 @@ public class Service {
         return usuarioDao.findAll();
     }
 
-    public void retiro(Usuario u, Integer monto) throws Exception{
-         usuarioDao.retiro(u, monto);
+    public Respuesta retiro(Usuario u, Integer monto) throws Exception{
+        return usuarioDao.retiro(u, monto);
     }
     public String echo(Usuario u, String parameter) {
         return parameter + " " + u.getId();
@@ -42,11 +43,11 @@ public class Service {
     public void depositar(Usuario u, Integer monto) throws Exception{
          usuarioDao.retiro(u, monto);
     }
-    public void cambiarClave(Usuario u, String clave) throws Exception{
-        usuarioDao.cambiarClave(u, clave);
+    public Respuesta cambiarClave(Usuario u, String claveActual, String claveNueva) throws Exception{
+        return usuarioDao.cambiarClave(u, claveActual, claveNueva);
     }
-    public Integer consultarSaldo(Integer id) throws Exception{
-        return usuarioDao.consultarSaldo(id).getSaldo();
+    public Respuesta consultarSaldo(Usuario usuario) throws Exception{
+        return usuarioDao.consultarSaldo(usuario);
     }
     public Service() {
         try {

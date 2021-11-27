@@ -8,14 +8,14 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="454.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banamercliente.presentacion.retirarDinero.RetirarDineroController">
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="506.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banamercliente.presentacion.retirarDinero.RetirarDineroController">
     <stylesheets>
         <URL value="@retirardinero.css" />
     </stylesheets>
    <children>
       <Label layoutX="40.0" layoutY="42.0" prefHeight="29.0" prefWidth="95.0" text="Saldo de cuenta:" />
-      <TextField layoutX="166.0" layoutY="44.0" prefHeight="25.0" prefWidth="254.0" />
-      <Button fx:id="btnRegresar" layoutX="357.0" layoutY="211.0" mnemonicParsing="false" onAction="#onActionRegresar" prefHeight="39.0" prefWidth="63.0">
+      <TextField fx:id="textFielSaldo" editable="false" layoutX="166.0" layoutY="44.0" prefHeight="25.0" prefWidth="239.0" />
+      <Button fx:id="btnRegresar" layoutX="414.0" layoutY="211.0" mnemonicParsing="false" onAction="#onActionRegresar" prefHeight="39.0" prefWidth="63.0">
          <graphic>
             <ImageView fitHeight="47.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -26,9 +26,9 @@
       </Button>
       <Label layoutX="40.0" layoutY="97.0" prefHeight="29.0" prefWidth="95.0" text="Monto a retirar:" />
       <Label layoutX="40.0" layoutY="158.0" prefHeight="29.0" prefWidth="95.0" text="Resultado" />
-      <TextField layoutX="166.0" layoutY="99.0" prefHeight="25.0" prefWidth="254.0" />
-      <TextField layoutX="166.0" layoutY="158.0" prefHeight="25.0" prefWidth="254.0" />
-      <Button fx:id="btnAceptar" layoutX="204.0" layoutY="211.0" mnemonicParsing="false" onAction="#onActionAceptar" prefHeight="33.0" prefWidth="30.0">
+      <TextField fx:id="textFielMontoRetirar" layoutX="166.0" layoutY="99.0" prefHeight="25.0" prefWidth="239.0" />
+      <TextField fx:id="textFielResultado" editable="false" layoutX="137.0" layoutY="158.0" prefHeight="25.0" prefWidth="299.0" />
+      <Button fx:id="btnAceptar" layoutX="222.0" layoutY="211.0" mnemonicParsing="false" onAction="#onActionAceptar" prefHeight="33.0" prefWidth="30.0">
          <graphic>
             <ImageView fitHeight="47.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -42,6 +42,15 @@
             <ImageView fitHeight="47.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../recursos/Limpiar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnConsultarSaldo" layoutX="423.0" layoutY="39.0" mnemonicParsing="false" onAction="#OnActionActualizarSaldo" prefHeight="42.0" prefWidth="52.0">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/ConsultarSaldo.png" />
                </image>
             </ImageView>
          </graphic>

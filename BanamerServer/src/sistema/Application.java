@@ -10,10 +10,10 @@ import sistema.logic.Service;
 public class Application {
     
     public static void main(String[] args) throws IOException {
-        /*Server server = new Server();
-        server.run();*/
+        Server server = new Server();
+        server.run();
         
-        try {
+       /* try {
             List<Usuario> resultado = Service.instance().findAll();
             for (int i = 0; i < resultado.size(); i++) {
                 System.out.println("Usuario: "+ resultado.get(i).toString());
@@ -41,9 +41,9 @@ public class Application {
             
             usuario = Service.instance().getUsuario(usuario);
             
-            System.out.println("Usuario: "+ usuario.toString());*/
+            System.out.println("Usuario: "+ usuario.toString());
         } catch (Exception e) {
             System.out.println("Error");
-        }
+        }*/
     }
 }
